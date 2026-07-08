@@ -1,0 +1,108 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full Screen Blue Background */
+body {
+    width: 100%;
+    height: 100vh;
+    background: #a8d8f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+}
+
+/* Outer Blue Rounded Box - No Border */
+.outer-box {
+    width: 88%;
+    height: 78vh;
+    background: #a8d8f0;
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.outer-box:hover {
+    box-shadow: none;
+}
+
+/* Inner Two-Panel Box */
+.inner-box {
+    width: 72%;
+    height: 72%;
+    display: flex;
+    border: 3px solid #e03030;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Left Panel - Yellow */
+.left-panel {
+    width: 45%;
+    height: 100%;
+    background: #fffacd;
+    border-right: 3px solid #e03030;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+
+.left-panel ul {
+    list-style: none;
+    text-align: center;
+}
+
+.left-panel ul li {
+    font-size: 22px;
+    color: #e03030;
+    padding: 5px 8px;
+    font-family: cursive;
+    cursor: text;
+    border-radius: 6px;
+    outline: none;
+    min-width: 80px;
+}
+
+.left-panel ul li:hover {
+    background: none;
+    transform: none;
+}
+
+.left-panel ul li:focus {
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 0 2px #f0b800;
+}
+
+/* Right Panel - Yellow */
+.right-panel {
+    width: 55%;
+    height: 100%;
+    background: #fffacd;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 18px 24px;
+}
+
+.right-panel h2 {
+    font-size: 28px;
+    color: #e03030;
+    font-family: cursive;
+    font-weight: normal;
+    transition: color 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.right-panel h2:hover {
+    color: #333;
+    transform: none;
+}
